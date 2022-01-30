@@ -1,4 +1,7 @@
 package com.bivizul.cryptoapp.pojo
 
-class CoinInfoListOfData {
-}
+data class CoinInfoListOfData(
+    @SerializedName("Data")
+    @Expose
+    val data: List<Datum>? = null
+)
