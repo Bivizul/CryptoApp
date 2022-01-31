@@ -6,11 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bivizul.cryptoapp.R
-import com.bivizul.cryptoapp.data.model.CoinPriceInfo
+import com.bivizul.cryptoapp.data.network.model.CoinInfoDto
 
 class CoinInfoAdapter(private val context: Context): RecyclerView.Adapter<CoinInfoAdapter.CoinInfoViewHolder>() {
 
-    var coinInfoList: List<CoinPriceInfo> = listOf()
+    var coinInfoList: List<CoinInfoDto> = listOf()
     set(value){
         field = value
         notifyDataSetChanged()
@@ -52,7 +52,7 @@ class CoinInfoAdapter(private val context: Context): RecyclerView.Adapter<CoinIn
     }
 
     interface OnCoinClickListener{
-        fun OnCoinClick(coinPriceInfo: CoinPriceInfo)
+        fun OnCoinClick(coinPriceInfo: CoinInfoDto)
     }
 
 
