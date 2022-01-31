@@ -1,8 +1,8 @@
-package com.bivizul.cryptoapp.api
+package com.bivizul.cryptoapp.data.network
 
 import androidx.room.Query
-import com.bivizul.cryptoapp.pojo.CoinInfoListOfData
-import com.bivizul.cryptoapp.pojo.CoinPriceInfoRawData
+import com.bivizul.cryptoapp.data.model.CoinInfoListOfData
+import com.bivizul.cryptoapp.data.model.CoinPriceInfoRawData
 
 interface ApiService {
 

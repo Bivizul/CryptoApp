@@ -1,12 +1,12 @@
-package com.bivizul.cryptoapp
+package com.bivizul.cryptoapp.presentation
 
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.bivizul.cryptoapp.R
 
 class CoinDetailActivity: AppCompatActivity() {
 

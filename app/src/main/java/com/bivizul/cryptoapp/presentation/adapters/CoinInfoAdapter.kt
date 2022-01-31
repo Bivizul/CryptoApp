@@ -1,4 +1,4 @@
-package com.bivizul.cryptoapp.adapters
+package com.bivizul.cryptoapp.presentation.adapters
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bivizul.cryptoapp.R
-import com.bivizul.cryptoapp.pojo.CoinPriceInfo
+import com.bivizul.cryptoapp.data.model.CoinPriceInfo
 
 class CoinInfoAdapter(private val context: Context): RecyclerView.Adapter<CoinInfoAdapter.CoinInfoViewHolder>() {
 

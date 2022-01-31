@@ -1,13 +1,13 @@
-package com.bivizul.cryptoapp
+package com.bivizul.cryptoapp.presentation
 
 import android.app.Application
 import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
-import com.bivizul.cryptoapp.api.ApiFactory
-import com.bivizul.cryptoapp.database.AppDatabase
-import com.bivizul.cryptoapp.pojo.CoinPriceInfo
-import com.bivizul.cryptoapp.pojo.CoinPriceInfoRawData
+import com.bivizul.cryptoapp.data.network.ApiFactory
+import com.bivizul.cryptoapp.data.database.AppDatabase
+import com.bivizul.cryptoapp.data.model.CoinPriceInfo
+import com.bivizul.cryptoapp.data.model.CoinPriceInfoRawData
 import java.util.concurrent.TimeUnit
 
 class CoinViewModel(application: Application): AndroidViewModel(application) {
@@ -28,7 +28,7 @@ class CoinViewModel(application: Application): AndroidViewModel(application) {
     private fun loadData(){
         val disposable = ApiFactory.apiService.getTopCoinsInfo(limit = 50)
             .map{it.data?.map{it.coinInfo?.name}?.joinToString(",")}
-            .flatMap{ApiFactory.apiService.getFullPriceList(fSyms = it)}
+            .flatMap{ ApiFactory.apiService.getFullPriceList(fSyms = it)}
             .map{getPriceListFromRawData(it)}
             .delaySubscription(10, TimeUnit.SECONDS)
             .repeat()

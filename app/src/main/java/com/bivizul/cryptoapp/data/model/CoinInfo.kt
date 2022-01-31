@@ -1,4 +1,4 @@
-package com.bivizul.cryptoapp.pojo
+package com.bivizul.cryptoapp.data.model
 
 data class CoinInfo(
     @SerializedName("Name")
