@@ -2,6 +2,7 @@ package com.bivizul.cryptoapp.data.network.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import com.bivizul.cryptoapp.data.network.ApiFactory.BASE_IMAGE_URL
 import com.bivizul.cryptoapp.utils.convertTimestampToTime
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
