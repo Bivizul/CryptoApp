@@ -1,4 +1,7 @@
 package com.bivizul.cryptoapp.presentation
 
-class CoinPriceListActivity {
+import androidx.appcompat.app.AppCompatActivity
+
+class CoinPriceListActivity: AppCompatActivity()  {
+
 }
