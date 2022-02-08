@@ -3,12 +3,11 @@ package com.bivizul.cryptoapp.presentation
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
-import com.bivizul.cryptoapp.R
 import com.bivizul.cryptoapp.databinding.ActivityCoinPriceListBinding
 import com.bivizul.cryptoapp.domain.CoinInfo
 import com.bivizul.cryptoapp.presentation.adapters.CoinInfoAdapter
 
-class CoinPriceListActivity: AppCompatActivity()  {
+class CoinPriceListActivity : AppCompatActivity() {
 
     private lateinit var viewModel: CoinViewModel
 
@@ -20,7 +19,7 @@ class CoinPriceListActivity: AppCompatActivity()  {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         val adapter = CoinInfoAdapter(this)
-        adapter.onCoinClickListener = object : CoinInfoAdapter.OnCoinClickListener{
+        adapter.onCoinClickListener = object : CoinInfoAdapter.OnCoinClickListener {
             override fun onCoinClick(coinPriceInfo: CoinInfo) {
                 val intent = CoinDetailActivity.newIntent(
                     this@CoinPriceListActivity,
@@ -33,7 +32,7 @@ class CoinPriceListActivity: AppCompatActivity()  {
         // убираем анимацию
         binding.rvCoinPriceList.itemAnimator = null
         viewModel = ViewModelProvider(this)[CoinViewModel::class.java]
-        viewModel.coinInfoList.observe(this){
+        viewModel.coinInfoList.observe(this) {
             adapter.submitList(it)
         }
     }
