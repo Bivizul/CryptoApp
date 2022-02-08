@@ -2,7 +2,7 @@ package com.bivizul.cryptoapp.domain
 
 data class CoinInfo(
 
-    val fromSymbol: String?,
+    val fromSymbol: String,
     val toSymbol: String?,
     val price: String?,
     val lastUpdate: String?,

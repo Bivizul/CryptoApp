@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">CryptoApp</string>
-    <string name="slash">1</string>
-    <string name="price_label">2</string>
-    <string name="min_price_label">3</string>
-    <string name="max_price_label">4</string>
-    <string name="last_market_label">5</string>
-    <string name="last_updated_label">6</string>
+    <string name="slash">/</string>
+    <string name="price_label">Цена:</string>
+    <string name="min_price_label">Минимум за день:</string>
+    <string name="max_price_label">Максимум за день:</string>
+    <string name="last_market_label">Последняя сделка:</string>
+    <string name="last_updated_label">Обновлено:</string>
 </resources>
