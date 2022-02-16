@@ -16,7 +16,7 @@ data class CoinInfoDto(
     @PrimaryKey
     @SerializedName("FROMSYMBOL")
     @Expose
-    val fromSymbol: String?,
+    val fromSymbol: String,
     @SerializedName("TOSYMBOL")
     @Expose
     val toSymbol: String?,

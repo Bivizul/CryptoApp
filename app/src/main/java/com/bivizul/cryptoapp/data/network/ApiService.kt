@@ -1,8 +1,9 @@
 package com.bivizul.cryptoapp.data.network
 
-import androidx.room.Query
 import com.bivizul.cryptoapp.data.network.model.CoinNamesListDto
 import com.bivizul.cryptoapp.data.network.model.CoinInfoJsonContainerDto
+import retrofit2.http.GET
+import retrofit2.http.Query
 
 interface ApiService {
 
@@ -17,7 +18,7 @@ interface ApiService {
     suspend fun getFullPriceList(
         @Query(QUERY_PARAM_API_KEY) apiKey: String = "",
         @Query(QUERY_PARAM_FROM_SYMBOLS) fSyms: String,
-        @Query(QUERY_PARAM_TO_SYMBOL) tSyms: String = CURRENCY
+        @Query(QUERY_PARAM_TO_SYMBOLS) tSyms: String = CURRENCY
     ): CoinInfoJsonContainerDto
 
     companion object {

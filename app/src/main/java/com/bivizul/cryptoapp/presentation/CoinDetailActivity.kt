@@ -4,11 +4,8 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.ViewModelProvider
 import com.bivizul.cryptoapp.R
 import com.bivizul.cryptoapp.databinding.ActivityCoinDetailBinding
-import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.fragment_coin_detail.*
 
 class CoinDetailActivity : AppCompatActivity() {
 

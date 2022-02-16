@@ -8,7 +8,6 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.bivizul.cryptoapp.databinding.FragmentCoinDetailBinding
 import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.fragment_coin_detail.*
 
 class CoinDetailFragment : Fragment() {
 
