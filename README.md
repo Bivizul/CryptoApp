@@ -22,4 +22,5 @@ Cryptocurrency exchange rate against the dollar. Requests from cryptocompare.com
 
 ## 📸 &nbsp;Screenshots
 
-<img src="assets/1.png" width="250"> <img src="assets/2.png" width="250"> <img src="assets/3.png" width="250"> <img src="assets/4.png" width="250">
+<img src="assets/1.png" width="250"> <img src="assets/2.png" width="250">
+<img src="assets/3.png" height="250"> <img src="assets/4.png" height="250">
