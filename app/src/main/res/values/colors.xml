@@ -8,7 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="colorPrimary">#000</color>
-    <color name="colorPrimaryDark">#000</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="color_background">#BEBEBE</color>
+    <color name="color_background_dark">#292929</color>
+    <color name="color_surface">#EDEDED</color>
+    <color name="color_surface_dark">#4E4E4E</color>
+
 </resources>

@@ -4,6 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
+import com.bivizul.cryptoapp.R
 import com.bivizul.cryptoapp.databinding.ItemCoinInfoBinding
 import com.bivizul.cryptoapp.domain.CoinInfo
 import com.squareup.picasso.Picasso
@@ -30,8 +31,8 @@ class CoinInfoAdapter(
         val coin = getItem(position)
         with(holder.binding) {
             with(coin) {
-                val symbolTemplate = "%s / %s"
-                val lastUpdateTemplate = "Время последнего обновления: %s"
+                val symbolTemplate = context.getString(R.string.symbols_template)
+                val lastUpdateTemplate = context.getString(R.string.last_update_template)
                 tvSymbols.text = String.format(symbolTemplate, fromSymbol, toSymbol)
                 tvPrice.text = price
                 tvLastUpdate.text = String.format(lastUpdateTemplate, lastUpdate)

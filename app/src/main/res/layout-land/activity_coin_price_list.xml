@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:fitsSystemWindows="true"
     tools:context=".presentation.CoinPriceListActivity">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -20,7 +22,7 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@id/middle_of_screen"/>
+        app:layout_constraintStart_toStartOf="@id/middle_of_screen" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/middle_of_screen"
