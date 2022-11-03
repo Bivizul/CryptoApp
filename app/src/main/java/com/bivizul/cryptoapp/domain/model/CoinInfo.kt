@@ -1,4 +1,4 @@
-package com.bivizul.cryptoapp.domain
+package com.bivizul.cryptoapp.domain.model
 
 data class CoinInfo(
 

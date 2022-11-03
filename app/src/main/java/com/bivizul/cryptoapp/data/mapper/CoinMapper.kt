@@ -4,7 +4,7 @@ import com.bivizul.cryptoapp.data.database.CoinInfoDbModel
 import com.bivizul.cryptoapp.data.network.model.CoinInfoDto
 import com.bivizul.cryptoapp.data.network.model.CoinInfoJsonContainerDto
 import com.bivizul.cryptoapp.data.network.model.CoinNamesListDto
-import com.bivizul.cryptoapp.domain.CoinInfo
+import com.bivizul.cryptoapp.domain.model.CoinInfo
 import com.google.gson.Gson
 import java.sql.Timestamp
 import java.text.SimpleDateFormat

@@ -2,12 +2,10 @@ package com.bivizul.cryptoapp.presentation
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
-import androidx.lifecycle.viewModelScope
 import com.bivizul.cryptoapp.data.repository.CoinRepositoryImpl
-import com.bivizul.cryptoapp.domain.GetCoinInfoListUseCase
-import com.bivizul.cryptoapp.domain.GetCoinInfoUseCase
-import com.bivizul.cryptoapp.domain.LoadDataUseCase
-import kotlinx.coroutines.launch
+import com.bivizul.cryptoapp.domain.usecases.GetCoinInfoListUseCase
+import com.bivizul.cryptoapp.domain.usecases.GetCoinInfoUseCase
+import com.bivizul.cryptoapp.domain.usecases.LoadDataUseCase
 
 class CoinViewModel(application: Application) : AndroidViewModel(application) {
 

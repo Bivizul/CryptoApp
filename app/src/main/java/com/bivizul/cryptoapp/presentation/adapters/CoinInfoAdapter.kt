@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import com.bivizul.cryptoapp.R
 import com.bivizul.cryptoapp.databinding.ItemCoinInfoBinding
-import com.bivizul.cryptoapp.domain.CoinInfo
+import com.bivizul.cryptoapp.domain.model.CoinInfo
 import com.squareup.picasso.Picasso
 
 class CoinInfoAdapter(

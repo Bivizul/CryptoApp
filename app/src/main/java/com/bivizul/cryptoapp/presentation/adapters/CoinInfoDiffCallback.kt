@@ -1,7 +1,7 @@
 package com.bivizul.cryptoapp.presentation.adapters
 
 import androidx.recyclerview.widget.DiffUtil
-import com.bivizul.cryptoapp.domain.CoinInfo
+import com.bivizul.cryptoapp.domain.model.CoinInfo
 
 object CoinInfoDiffCallback : DiffUtil.ItemCallback<CoinInfo>() {
 

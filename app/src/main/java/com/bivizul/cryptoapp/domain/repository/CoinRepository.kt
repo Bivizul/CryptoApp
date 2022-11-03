@@ -1,6 +1,7 @@
-package com.bivizul.cryptoapp.domain
+package com.bivizul.cryptoapp.domain.repository
 
 import androidx.lifecycle.LiveData
+import com.bivizul.cryptoapp.domain.model.CoinInfo
 
 interface CoinRepository {
 

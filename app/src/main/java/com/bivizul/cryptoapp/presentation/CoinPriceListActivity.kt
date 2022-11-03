@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.bivizul.cryptoapp.R
 import com.bivizul.cryptoapp.databinding.ActivityCoinPriceListBinding
-import com.bivizul.cryptoapp.domain.CoinInfo
+import com.bivizul.cryptoapp.domain.model.CoinInfo
 import com.bivizul.cryptoapp.presentation.adapters.CoinInfoAdapter
 
 class CoinPriceListActivity : AppCompatActivity() {

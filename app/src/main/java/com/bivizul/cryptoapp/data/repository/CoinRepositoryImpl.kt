@@ -8,8 +8,8 @@ import androidx.work.WorkManager
 import com.bivizul.cryptoapp.data.database.AppDatabase
 import com.bivizul.cryptoapp.data.mapper.CoinMapper
 import com.bivizul.cryptoapp.data.workers.RefreshDataWorker
-import com.bivizul.cryptoapp.domain.CoinInfo
-import com.bivizul.cryptoapp.domain.CoinRepository
+import com.bivizul.cryptoapp.domain.model.CoinInfo
+import com.bivizul.cryptoapp.domain.repository.CoinRepository
 
 class CoinRepositoryImpl(
     private val application: Application
